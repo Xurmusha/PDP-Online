@@ -1,0 +1,564 @@
+/*********************************FONT STYLE*****************************************/
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../font/OpenSans/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../font/OpenSans/OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../font/OpenSans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../font/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+.font-family-bold {
+  font-family: "OpenSans-Bold", sans-serif;
+}
+
+.font-family-semi-bold {
+  font-family: "OpenSans-SemiBold", sans-serif;
+}
+
+.font-family-light {
+  font-family: "OpenSans-Light", sans-serif;
+}
+
+.font-family-regular {
+  font-family: "OpenSans-Regular", sans-serif;
+}
+
+/***********************************COLORS STYLE*******************************************/
+$color-blue: #003846;
+$color-blue-2: #0a4958;
+$color-body: #f8f8fa;
+$color-green: #63c19c;
+$color-grey: #f0f0f0;
+$color-yellow: #ffb685;
+$color-grey-2: #aeaeaf;
+
+/************************************ICON STYLES*****************************************************/
+.icon {
+  width: 26.4px;
+  height: 18.55px;
+  display: inline-block;
+  vertical-align: sub;
+}
+
+.icon-next {
+  width: 28.8px;
+  height: 12.44px;
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+
+  background-color: #000000;
+
+  &.icon-direct {
+    mask-image: url("../images/icon/Path (1).png");
+    -webkit-mask-image: url("../images/icon/Path (1).png");
+  }
+}
+
+
+.text-18 {
+  font-size: 18px;
+}
+
+body {
+  background-color: $color-body;
+
+  nav {
+    .navbar-nav {
+      .nav-item {
+        border-top: #d6d6e0 3px solid;
+        width: 195px;
+
+        .nav-link {
+          font-size: 15px;
+          color: $color-grey-2;
+        }
+
+        &:hover {
+          border-top: #de1e3a 3px solid;
+
+          .nav-link {
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+
+  header {
+    background-color: #ffffff;
+  }
+
+  main {
+    background-color: $color-blue;
+
+    section {
+      &#OnlineAcademy {
+        .container {
+          position: relative;
+
+          .row {
+            .col-6 {
+              h3 {
+                font-size: 60px;
+              }
+
+              p {
+                font-size: 22px;
+              }
+            }
+
+            .col-6 {
+              .removeBg {
+                img {
+                  width: 586px;
+                  height: 794px;
+                }
+
+              }
+            }
+
+            &:nth-child(2) {
+              position: absolute;
+              left: 30px;
+              bottom: -270px;
+
+              .col-6 {
+                height: 270px;
+                background-color: $color-body;
+                border: 0.3px white solid;
+
+                .row {
+                  .col-5 {
+                    p {
+                      font-size: 23px;
+                    }
+                  }
+                }
+
+                &:nth-child(1) {
+                  background-color: $color-blue-2;
+                }
+
+              }
+            }
+          }
+
+          button {
+            position: absolute;
+            bottom: -330px;
+            left: 530px;
+          }
+        }
+      }
+
+      &#Courses {
+        background-color: white;
+        padding-top: 350px;
+
+        .container {
+          h4 {
+            font-size: 35px;
+          }
+
+          .table {
+            tr {
+              td {
+                &:nth-child(2) {
+                  color: #737373;
+                }
+
+                &:nth-child(3) {
+                  color: #737373;
+                }
+
+                &:nth-child(4) {
+                  color: #737373;
+                }
+              }
+
+              &:hover {
+                td {
+                  color: white;
+                  background-color: $color-blue;
+                }
+
+                .icon-next {
+                  background-color: white;
+                }
+              }
+            }
+          }
+
+          .row {
+            .card {
+              .oval {
+                width: 167px;
+                height: 167px;
+                border-radius: 50%;
+                background-color: $color-blue;
+                position: relative;
+
+                img {
+                  position: absolute;
+                  left: -78px;
+                  bottom: -60px;
+                }
+              }
+
+              p {
+                font-size: 16.2px;
+              }
+
+              &:nth-child(2) {
+                .oval {
+                  img {
+                    position: absolute;
+                    left: -70px;
+                    bottom: -85px;
+                  }
+                }
+              }
+
+              &:nth-child(3) {
+                .oval {
+                  img {
+                    position: absolute;
+                    left: -8px;
+                    bottom: -10px;
+                  }
+                }
+              }
+
+              &:nth-child(4) {
+                .oval {
+                  img {
+                    position: absolute;
+                    left: -10px;
+                    bottom: -12px;
+                  }
+                }
+              }
+
+              &:nth-child(5) {
+                .oval {
+                  img {
+                    position: absolute;
+                    left: 22px;
+                    bottom: -18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &#info {
+        background-color: $color-body;
+
+        .container {
+          h4 {
+            font-size: 35px;
+          }
+
+          .row {
+            .col-10 {
+              .col-7 {
+                p {
+                  font-size: 22px;
+                }
+
+                h6 {
+                  font-size: 18px;
+                }
+
+                .carousel {
+                  position: relative;
+
+                  .carousel-indicators {
+                    li {
+                      width: 12px;
+                      height: 12px;
+                      border-radius: 50%;
+                      border: 1px #bebebe solid;
+                    }
+
+                    .active {
+                      background-color: #2f2f2f;
+
+                    }
+
+                    position: absolute;
+                    top: 310px;
+                    left: -360px;
+                  }
+                }
+              }
+            }
+
+            .col-2 {
+              position: relative;
+
+              img {
+                width: 330px;
+                height: 335px;
+
+                &:nth-child(2) {
+                  width: 248px;
+                  height: 251px;
+                  position: absolute;
+                  left: 115px;
+                  top: 40px;
+                }
+              }
+            }
+          }
+
+          div {
+            position: relative;
+
+            .hover {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 1158px;
+              height: 113px;
+              background-color: rgba(248, 248, 250, 0.7);
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  footer {
+    li {
+      font-size: 14px;
+    }
+  }
+}
+
+#page-2 {
+  background-color: white;
+
+  main {
+    background-color: white;
+
+    .container {
+      .row {
+        .col-4 {
+          .card {
+            .card-header {
+              background-color: white;
+
+              div {
+                h6 {
+                  font-size: 14px;
+                }
+
+                p {
+                  font-size: 12px;
+                }
+              }
+            }
+
+            .card-body {
+              img {
+                width: 13.33px;
+                height: 13.33px;
+                margin-top: 3px;
+              }
+
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+
+          .row {
+            .col-6 {
+              .image-row {
+                position: relative;
+
+                img {
+                  &:nth-child(2) {
+                    position: absolute;
+                    left: 18px;
+                    top: 2px;
+                  }
+
+                  &:nth-child(3) {
+                    position: absolute;
+                    left: 37px;
+                    top: 2px;
+                  }
+                }
+              }
+
+            }
+          }
+
+          .card-checkbox {
+            .card-body {
+              background-color: $color-grey;
+
+              .form-check {
+                .form-check-label {
+                  h6 span {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+
+            .card-footer {
+              background-color: $color-green;
+
+              button {
+                font-size: 20px;
+              }
+
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .col-8 {
+          .programsOfCourses {
+            nav {
+              .navbar {
+                .navbar-nav {
+                  .nav-item {
+                    border-top: 0;
+                    width: auto;
+
+                    .nav-link {
+                      font-size: 14px;
+
+                      &:hover {
+                        border-bottom: 2px #2f2f2f solid;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            div {
+              &#accordion {
+                .card-link {
+                  .row {
+                    .col-5 {
+                      h6 {
+                        font-size: 14px;
+                      }
+
+                      p {
+                        font-size: 12px;
+                      }
+                    }
+
+                    .col-3 {
+                      img {
+                        width: 14.4px;
+                        height: 14.4px;
+                      }
+
+                      .path {
+                        img {
+                          width: 12px;
+                          height: 6px;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .card-body{
+                  .col-5{
+                    p{
+                      font-size: 12px;
+                    }
+                    h6{
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+    background-color: #f8f8fa;
+  }
+}
+
+#page-3 {
+  background-color: $color-body;
+
+  main {
+    background-color: $color-body;
+
+    .container {
+      .row {
+        .col-4 {
+          .card {
+            .card-header {
+              background-color: white;
+
+              div {
+                h6 {
+                  font-size: 14px;
+                }
+
+                p {
+                  font-size: 12px;
+                }
+              }
+            }
+
+            .card-body {
+              img {
+                width: 13.33px;
+                height: 13.33px;
+                margin-top: 3px;
+              }
+
+              p {
+                font-size: 12px;
+              }
+            }
+
+
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
